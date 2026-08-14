@@ -1,65 +1,70 @@
-# Credit Card Fraud Detection
+# 💳 Credit Card Fraud Detection
 
-## Overview
+> **Machine Learning | Classification | Explainable AI**
 
-This project applies Machine Learning techniques to identify fraudulent credit card transactions.
+Projeto de Machine Learning desenvolvido para estudar a identificação de transações potencialmente fraudulentas em uma base altamente desbalanceada.
 
-The dataset contains anonymized transaction information and a binary target variable indicating whether a transaction is fraudulent.
+## 🎯 Objetivo
 
-## Technologies Used
+Construir e avaliar modelos de classificação capazes de distinguir transações legítimas de transações fraudulentas, considerando as particularidades de um problema de **class imbalance**.
 
-* Python
-* Pandas
-* NumPy
-* Scikit-Learn
-* XGBoost
-* SHAP
-* Google Colab
+## 🔬 Abordagem
 
-## Project Steps
+### 1. Exploração dos dados
 
-### Data Loading
+- Inspeção da estrutura da base
+- Verificação de valores ausentes
+- Análise da distribuição das classes
+- Exploração das variáveis
 
-Loaded the credit card transaction dataset directly from TensorFlow public storage.
+### 2. Preparação
 
-### Exploratory Data Analysis
+- Separação entre treino e teste
+- Seleção de características
+- Tratamento do desbalanceamento das classes
 
-* Dataset inspection
-* Missing value verification
-* Class distribution analysis
-* Feature exploration
+### 3. Modelos
 
-### Data Preparation
+Foram explorados:
 
-* Train/Test Split
-* Feature Selection
-* Handling class imbalance
+- Random Forest Classifier
+- XGBoost Classifier
 
-### Machine Learning Models
+### 4. Avaliação
 
-* Random Forest Classifier
-* XGBoost Classifier
+As métricas consideradas incluem:
 
-### Model Evaluation
+- Precision
+- Recall
+- F1 Score
+- Classification Report
 
-Metrics used:
+Para detecção de fraude, a análise de **Recall e Precision** é especialmente relevante, pois falsos negativos e falsos positivos possuem impactos diferentes no negócio.
 
-* Precision
-* Recall
-* F1 Score
-* Classification Report
+### 5. Explainable AI
 
-### Explainable AI
+Foi utilizado **SHAP (SHapley Additive exPlanations)** para interpretar as previsões e investigar a importância das características utilizadas pelos modelos.
 
-SHAP (SHapley Additive exPlanations) was used to interpret model predictions and understand feature importance.
+## 🛠️ Tecnologias
 
-## Results
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- XGBoost
+- SHAP
+- Google Colab
 
-The models successfully identified fraudulent transactions while handling a highly imbalanced dataset.
+## 📊 Resultado
 
+Os modelos foram avaliados em um cenário de classes altamente desbalanceadas, com foco em identificar transações fraudulentas e compreender os fatores utilizados nas previsões.
 
-LinkedIn:
-https://www.linkedin.com/in/souomichael
+> 📌 Este README evita apresentar métricas numéricas que não estão documentadas no repositório. Os resultados quantitativos devem ser adicionados após a consolidação da avaliação final dos modelos.
 
-GitHub:
-https://github.com/EusouMichael
+## 💼 Competências demonstradas
+
+**Machine Learning** · **Classification** · **Imbalanced Data** · **Model Evaluation** · **XGBoost** · **Random Forest** · **Explainable AI** · **SHAP**
+
+## 📌 Sobre
+
+Projeto educacional desenvolvido como parte da evolução prática em **Python, Machine Learning e análise de dados**.
